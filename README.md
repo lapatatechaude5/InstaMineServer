@@ -30,4 +30,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries or support, please open an issue on the [GitHub repository](https://github.com/la_patate_chaude/InstaMineServer/issues).
+For any inquiries or support, please open an issue on the [GitHub repository](https://github.com/lapatatechaude5/InstaMineServer/issues).
