@@ -13,19 +13,15 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("InstaMineServer");
 
-        Button createserveracceuil = new Button();
-        createserveracceuil.setText("Créer un serveur");
-        createserveracceuil.setOnAction(event -> {
-            CreateServer.create();
+        Button btnCreateServer = new Button("Create Server");
+        btnCreateServer.setOnAction(e -> {
+            CreateServer createServer = new CreateServer();
+            createServer.execute();
         });
 
-        // Layout de base
         StackPane root = new StackPane();
-        root.getChildren().add(createserveracceuil);
-
-        Scene scene = new Scene(root, 300, 250);
-
-        primaryStage.setScene(scene);
+        root.getChildren().add(btnCreateServer);
+        primaryStage.setScene(new Scene(root, 300, 200));
         primaryStage.show();
     }
 
